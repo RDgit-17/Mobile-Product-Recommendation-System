@@ -13,7 +13,6 @@ An end-to-end data analytics and machine learning project that cleans global sma
 - [Key EDA Findings](#key-eda-findings)
 - [Segmentation Results](#segmentation-results)
 - [Recommendation System](#recommendation-system)
-- [Project Structure](#project-structure)
 - [Tech Stack](#tech-stack)
 
 
@@ -107,29 +106,6 @@ Interactive app for segment insights and recommendations.
 | `recommend_by_budget(budget, min_rating, priority, brand, top_n)` | Filter by budget, minimum rating and brand, ranked by a chosen rating |
 | `predict_segment(...)` | Predicts the segment of a new phone from its specs |
 | `add_local_price(result, country)` | Converts USD prices to a country's local currency |
-
-
-## Project Structure
-
-```
-mobile-product-segmentation-recommendation/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── app.py                        # Streamlit application
-├── data/
-│   ├── Raw data.csv              # raw dataset
-│   ├── cleaned_data.csv          # output of cleaning.ipynb
-│   ├── encoded_data.csv          # input to pipeline.py
-│   └── model_level_clusters.csv  # model-level segments
-├── notebooks/
-│   ├── cleaning.ipynb
-│   └── EDA.ipynb
-├── src/
-│   └── pipeline.py               # scaling, K-Means, recommenders
-└── docs/
-    └── Project_Problem_Statement.pdf
-```
 
 
 ## Tech Stack
